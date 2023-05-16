@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="registration-form">
+        <h1>Employee Registration Form</h1>
+        <div class="registration-box">
+            <div class="basic-info">
+                <div class="name-birthDate">
+                    <div class="full-name">
+                        <h2>Full Name</h2>
+                        <div class="namebox-container">
+                            <div class="fName">
+                                <input type="text">
+                                <h6>First Name</h6>
+                            </div>
+                            <div class="lName">
+                                <input type="text">
+                                <h6>Last Name</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date-of-birth">
+                        <h2>Date of Birth</h2>
+                        <div class="birth-box">
+                            <input type="date">
+                            <h6>Date</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-number">
+                    <div class="email">
+                        <h2>Email</h2>
+                        <div class="email-box">
+                            <input type="text">
+                            <h6>example@example.com</h6>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <h2>Phone Number</h2>
+                        <div class="number-box">
+                            <input type="tel" placeholder="(+63) 00000000000">
+                            <h6>example@example.com</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="address-info">
+                <h2>Address</h2>
+                <div class="street-address">
+                    <input type="text">
+                    <h6>Street Address</h6>
+                </div>
+                <div class="street-address">
+                    <input type="text">
+                    <h6>Street Address Line 2</h6>
+                </div>
+                <div class="city-state">
+                    <div class="city">
+                        <input type="text">
+                        <h6>City</h6>
+                    </div>
+                    <div class="state">
+                        <input type="text">
+                        <h6>State/Province</h6>
+                    </div>
+                </div>
+                <div class="postal-code">
+                    <input type="text">
+                    <h6>Postal / Zip Code</h6>
+                </div>
+            </div>
+            <div class="position-info">
+                <h2>Applying Position</h2>
+                <div class="position">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="type-of-work">
+                <h2>Type of Work</h2>
+                <div class="option1-box">
+                    <input type="radio" name="option" id="option1" onclick="clearRadioSelection()">
+                    <label for="option1">Permanent</label><br>    
+                </div>
+
+                <div class="option2-box">
+                    <input type="radio" name="option" id="option2" onclick="clearRadioSelection()">
+                    <label for="option2">Both</label><br> 
+                </div>
+
+                <div class="option3-box">
+                    <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                    <label for="option3">Other</label><br>
+                </div>
+
+                <div class="option4-box">
+                    <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                    <label for="option4">Temporary</label>
+                </div>
+
+            </div>
+            <div class="upload-file">
+                <h2>Please Upload Resume</h2>
+                <div class="upload">
+                    <input type="file" name="imageUpload">
+                    <div class="custom-button"> <img src="./icons/cloud-computing.png" alt="upload img"> Choose File</div>
+                </div>
+            </div>
+            <div class="cover-letter">
+                <h2>Cover Letter or Additional Information</h2>
+                <div class="coverletter">
+                    <textarea name="" id="" cols="30" rows="30" placeholder="type here..."></textarea>
+                </div>
+            </div>
+            <div class="veteran-status-info">
+                <h4>Veteran Status (Please select the option that describes your status the best)</h4>
+                <div class="status-radio-container">
+                    <div class="option1-box">
+                        <input type="radio" name="option" id="option1" onclick="clearRadioSelection()">
+                        <label for="option1">I am a veteran</label><br>    
+                    </div>
+    
+                    <div class="option2-box">
+                        <input type="radio" name="option" id="option2" onclick="clearRadioSelection()">
+                        <label for="option2">I am a recently separated veteran</label><br> 
+                    </div>
+    
+                    <div class="option3-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">I am not a veteran</label><br>
+                    </div>
+    
+                    <div class="option4-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">I am a special disabled veteran</label>
+                    </div>
+
+                    <div class="option5-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">I am an other protected veteran</label><br>
+                    </div>
+    
+                    <div class="option6-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Prefer not to answer</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gender-info">
+                <h2>Gender</h2>
+                <div class="gender-radio-container">
+                    <div class="option1-box">
+                        <input type="radio" name="option" id="option1" onclick="clearRadioSelection()">
+                        <label for="option1">Female</label><br>    
+                    </div>
+    
+                    <div class="option2-box">
+                        <input type="radio" name="option" id="option2" onclick="clearRadioSelection()">
+                        <label for="option2">Transgender Female</label><br> 
+                    </div>
+    
+                    <div class="option3-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">Prefer not to answer</label><br>
+                    </div>
+    
+                    <div class="option4-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Male</label>
+                    </div>
+    
+                    <div class="option5-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">Transgender Male</label><br>
+                    </div>
+    
+                    <div class="option6-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Not Listed</label>
+                    </div>
+                </div>
+            </div>
+            <div class="disabilities-info">
+                <h2>Disabilities</h2>
+                <div class="disabilities-radio-container">
+                    <div class="option1-box">
+                        <input type="radio" name="option" id="option1" onclick="clearRadioSelection()">
+                        <label for="option1">I have no disability</label><br>    
+                    </div>
+    
+                    <div class="option2-box">
+                        <input type="radio" name="option" id="option2" onclick="clearRadioSelection()">
+                        <label for="option2">I have two or more impairments and/or disabling medical conditions</label><br> 
+                    </div>
+    
+                    <div class="option3-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">I have a Specific Learning Difficulty (e.g Dyslexia/Dyspraxia/ADHD)</label><br>
+                    </div>
+    
+                    <div class="option4-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">I have a social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder</label>
+                    </div>
+
+                    <div class="option5-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">I have a long standing illness or health condition such as cancer, HIV, diabetes, chronic heart disease, or epilepsy</label><br>
+                    </div>
+    
+                    <div class="option6-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">I have a physical impairment or mobility issues (e.g. difficulty using arms/using a wheelchair or crutches)</label>
+                    </div>
+                    
+                    <div class="option7-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">I am deaf or have a serious hearing impairment</label>
+                    </div>
+
+                    <div class="option8-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">I am blind or have a serious visual impairment uncorrected by glasses</label>
+                    </div>
+
+                    <div class="option9-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Prefer not to answer</label>
+                    </div>
+
+                    <div class="option10-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">I have a disability, impairment or medical condition not listed here</label>
+                    </div>
+                </div>
+            </div>
+            <div class="race-info">
+                <h2>Race</h2>
+                <div class="race-radio-container">
+                    <div class="option1-box">
+                        <input type="radio" name="option" id="option1" onclick="clearRadioSelection()">
+                        <label for="option1">American</label><br>    
+                    </div>
+    
+                    <div class="option2-box">
+                        <input type="radio" name="option" id="option2" onclick="clearRadioSelection()">
+                        <label for="option2">Black or African American</label><br> 
+                    </div>
+    
+                    <div class="option3-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">White</label><br>
+                    </div>
+    
+                    <div class="option4-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Decline to Specify</label>
+                    </div>
+
+                    <div class="option5-box">
+                        <input type="radio" name="option" id="option3" onclick="clearRadioSelection()">
+                        <label for="option3">Asian</label><br>
+                    </div>
+    
+                    <div class="option6-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Native Hawaiian or Other Pacific Islander</label>
+                    </div>
+                    
+                    <div class="option7-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Two or more races</label>
+                    </div>
+
+                    <div class="option8-box">
+                        <input type="radio" name="option" id="option4" onclick="clearRadioSelection()">
+                        <label for="option4">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-notes">
+                <h2>Additional Notes</h2>
+                <div class="notes-letter">
+                    <textarea name="" id="" cols="30" rows="20" placeholder="type here..."></textarea>
+                </div>
+            </div>
+
+            <div class="submit-button-container">
+                <button class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

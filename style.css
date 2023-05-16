@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --bg-color: #EA6632;
+
+}
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registration-form {
+    flex-basis: 600px;
+    height: 600px;
+    overflow: auto;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    padding: 16px;
+    font-family: "Lato", sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+#registration-form h1 {
+    text-align: center;
+}
+
+#registration-form input {
+    height: 24px;
+}
+
+.registration-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.registration-box h6, .registration-box h2{
+    margin: 8px;
+}
+
+.name-birthDate, .email-number {
+    display: flex;
+}
+
+.full-name, .date-of-birth,
+.email, .number {
+    flex: 1 1 50%;
+    /* border: 2px red solid; */
+}
+
+.namebox-container {
+    display: flex;
+    gap: 8px;
+}
+.namebox-container input {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.birth-box input, .email-number input {
+    width: 90%;
+}
+
+.address-info input, .position-info input,
+.cover-letter textarea, .notes-letter textarea {
+    width: 95%;
+}
+
+.type-of-work input {
+    width: 16px;
+}
+
+.option1-box, .option2-box, .option3-box, .option4-box,
+.option5-box, .option6-box, .option7-box, .option8-box,
+.option9-box, .option10-box  {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 8px;
+}
+
+.upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.upload .custom-button, .submit-button {
+    background-color: #3DEB6B;
+    color: white;
+    padding: 10px 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.status-radio-container, .gender-radio-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.status-radio-container div, .gender-radio-container div {
+    width: 40%;
+    font-size: 16px;
+    margin: 4px;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.submit-button {
+    font-size: 24px;
+    margin-top: 16px;
+}
