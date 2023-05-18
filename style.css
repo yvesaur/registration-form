@@ -41,6 +41,12 @@ body {
     height: 24px;
 }
 
+#registration-form select {
+    height: 30px;
+    width: 96%;
+}
+
+
 .registration-box {
     display: flex;
     flex-direction: column;
